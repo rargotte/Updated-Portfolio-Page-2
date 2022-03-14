@@ -156,6 +156,7 @@ main {
     padding-right  : 2rem;
     border-right   : 0.35rem solid #2a607c;
     margin-bottom  : 1vw;
+    padding-top    : 20px;
 
 }
 
@@ -213,6 +214,7 @@ main {
     margin-left : 0.5rem;
     padding-left: 0.5rem;
     line-height : 1.5vw;
+    padding-top : 20px
 }
 
 img {
@@ -245,6 +247,8 @@ img {
     color          : -webkit-link;
     cursor         : pointer;
     text-decoration: underline;
+    padding-top    : 20px;
+    padding-bottom : 20px;
 }
 
 .contact-square {
