@@ -4,6 +4,12 @@
     margin    : 0;
 }
 
+:root {
+    --icon-size-1: "16";
+    --icon-size-2: "32";
+
+}
+
 html {
     /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
     font-size: 62.5%;
@@ -29,15 +35,10 @@ header h1 {
     font-size: 4.8rem;
 }
 
-header h1.page-title {
-    font-size: 2vw;
-}
 
 header a {
-    padding-top: 1vw;
     float      : right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size  : 1vw;
 }
 
 header div ul {
@@ -73,7 +74,25 @@ a:active {
     background-image: url(../img/new_profile.jpg); 
     background-size: 100% 100%; 
     height: 40rem
+}*/
+
+.text-square h2 {
+    font-weight: lighter;
+    color      : #2a607c;
 }
+
+i {
+    list-style: none;
+    font-size: 30px;
+    border-radius: 400px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 0px;
+    color: #2c3e50;
+  }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -83,6 +102,30 @@ a:active {
         height          : 10rem
     }
 
+    header h1.page-title {
+        font-size: 3vw;
+    }
+
+    header a {
+        padding-top: 0.5vw;
+        font-size  : 2vw;
+    }
+
+    .left-column h2 {
+        font-size: 3vw;
+    }
+
+    .text-square h2 {
+        font-size   : 2.5vw;
+        margin-left : 0.5rem;
+        padding-left: 0.5rem;
+        padding-top : 20px
+    }
+
+    .iconsize {
+        width : 16;
+        height: 16;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -92,6 +135,28 @@ a:active {
         background-size : 100% 100%;
         height          : 15rem
     }
+
+    header h1.page-title {
+        font-size: 3vw;
+    }
+
+    header a {
+        padding-top: 0.5vw;
+        font-size  : 2vw;
+    }
+
+    .left-column h2 {
+        font-size: 3vw;
+    }
+
+    .text-square h2 {
+        font-size   : 2.5vw;
+        margin-left : 0.5rem;
+        padding-left: 0.5rem;
+        padding-top : 20px
+    }
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -101,6 +166,27 @@ a:active {
         background-size : 100% 100%;
         height          : 20rem
     }
+
+    header h1.page-title {
+        font-size: 3vw;
+    }
+
+    header a {
+        padding-top: 0.5vw;
+        font-size  : 2vw;
+    }
+
+    .left-column h2 {
+        font-size: 3vw;
+    }
+
+    .text-square h2 {
+        font-size   : 2.5vw;
+        margin-left : 0.5rem;
+        padding-left: 0.5rem;
+        padding-top : 20px
+    }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -110,7 +196,31 @@ a:active {
         background-size : 100% 100%;
         height          : 30rem
     }
+
+    header h1.page-title {
+        font-size: 3vw;
+    }
+
+    header a {
+        padding-top: 0.5vw;
+        font-size  : 2vw;
+    }
+
+    .left-column h2 {
+        font-size: 3vw;
+    }
+
+    .text-square h2 {
+        font-size   : 2.5vw;
+        margin-left : 0.5rem;
+        padding-left: 0.5rem;
+        padding-top : 25px
+    }
+
+
 }
+
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -119,6 +229,27 @@ a:active {
         background-size : 100% 100%;
         height          : 40rem
     }
+
+    header h1.page-title {
+        font-size: 2vw;
+    }
+
+    header a {
+        padding-top: 0.5vw;
+        font-size  : 1.5vw;
+    }
+
+    .left-column h2 {
+        font-size: 2.5vw;
+    }
+
+    .text-square h2 {
+        font-size   : 1.5vw;
+        margin-left : 0.5rem;
+        padding-left: 0.5rem;
+        padding-top : 33px
+    }
+
 }
 
 .profile-pic img {
@@ -149,23 +280,21 @@ main {
 
 
 .left-column {
-    flex           : 0 0 15%;
-    display        : flex;
-    font-size      : 5rem;
-    justify-content: flex-end;
-    padding-right  : 2rem;
-    border-right   : 0.35rem solid #2a607c;
-    margin-bottom  : 1vw;
-    padding-top    : 20px;
+    flex                 : 0 0 15%;
+    display              : flex;
+    font-size            : 5rem;
+    justify-content      : flex-end;
+    /*    padding-right  : 2rem;
+    border-right         : 0.35rem solid #2a607c;*/
+    margin-bottom        : 1vw;
+    padding-top          : 20px;
 
 }
 
 .left-column h2 {
     font-weight: bold;
     color      : #2a607c;
-    font-size  : 1.5vw;
     text-align : right;
-    line-height: 1;
 }
 
 .right-column {
@@ -207,15 +336,6 @@ main {
 
 }
 
-.text-square h2 {
-    font-weight : lighter;
-    color       : #2a607c;
-    font-size   : 1.5vw;
-    margin-left : 0.5rem;
-    padding-left: 0.5rem;
-    line-height : 1.5vw;
-    padding-top : 20px
-}
 
 img {
     display  : block;
@@ -247,19 +367,18 @@ img {
     color          : -webkit-link;
     cursor         : pointer;
     text-decoration: underline;
-    padding-top    : 20px;
-    padding-bottom : 20px;
 }
 
 .contact-square {
-    display        : flex;
-    flex           : 0 0 100%;
-    font-size      : 1vw;
-    justify-content: space-between;
-    padding-left   : 1rem;
-    padding-right  : 1rem;
-    padding-bottom : 1rem;
-    align-items    : center;
+    display              : flex;
+    flex                 : 0 0 100%;
+    font-size            : 1.5vw;
+    justify-content      : space-between;
+    padding-left         : 3rem;
+    padding-right        : 1rem;
+    /*    padding-bottom : 1rem;*/
+    padding-top          : 15px;
+    align-items          : center;
 
 }
 
